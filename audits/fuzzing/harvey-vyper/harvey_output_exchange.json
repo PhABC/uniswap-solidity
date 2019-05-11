@@ -1,0 +1,439 @@
+{
+    "warnings": [
+        {
+            "time": 0,
+            "tryCount": 1,
+            "stepCount": 1,
+            "type": "precondition violation",
+            "text": "precondition violation",
+            "details": "Precondition violations should be avoided when passing inputs to other contracts. Make sure your contracts provide only valid inputs to both callees (e.g, via passed arguments) and callers (e.g., via return values).",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 3122,
+            "callerIsResponsible": true,
+            "signature": "00000000",
+            "sequenceId": "f04ff01",
+            "sequenceNumber": 0,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "00000000",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-123"
+        },
+        {
+            "time": 16173013200,
+            "tryCount": 5982,
+            "stepCount": 1,
+            "type": "precondition violation",
+            "text": "precondition violation",
+            "details": "Precondition violations should be avoided when passing inputs to other contracts. Make sure your contracts provide only valid inputs to both callees (e.g, via passed arguments) and callers (e.g., via return values).",
+            "address": "0xb9816fc57977d5a786e654c7cf76767be63b966e",
+            "codeHash": "0x9b0edef21c456d47da966009824c3e10a62f4c201fbaac9fb68db9d2fff6adde",
+            "pc": 1136,
+            "callerIsResponsible": true,
+            "signature": "23b872dd",
+            "sequenceId": "2feefd9f",
+            "sequenceNumber": 179,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "422f1043",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                },
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 950,
+                    "signature": "422f1043",
+                    "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+                    "callNumber": 3,
+                    "parentCallNumber": 1
+                }
+            ],
+            "weaknessId": "SWC-123"
+        },
+        {
+            "time": 17605652900,
+            "tryCount": 6649,
+            "stepCount": 1,
+            "type": "precondition violation",
+            "text": "precondition violation",
+            "details": "Precondition violations should be avoided when passing inputs to other contracts. Make sure your contracts provide only valid inputs to both callees (e.g, via passed arguments) and callers (e.g., via return values).",
+            "address": "0xb9816fc57977d5a786e654c7cf76767be63b966e",
+            "codeHash": "0x9b0edef21c456d47da966009824c3e10a62f4c201fbaac9fb68db9d2fff6adde",
+            "pc": 1289,
+            "callerIsResponsible": true,
+            "signature": "23b872dd",
+            "sequenceId": "1af5b964",
+            "sequenceNumber": 190,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "95e3c50b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                },
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 5206,
+                    "signature": "95e3c50b",
+                    "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+                    "callNumber": 4,
+                    "parentCallNumber": 1
+                }
+            ],
+            "weaknessId": "SWC-123"
+        },
+        {
+            "time": 17605652900,
+            "tryCount": 6649,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 5134,
+            "callerIsResponsible": false,
+            "signature": "95e3c50b",
+            "sequenceId": "1af5b964",
+            "sequenceNumber": 190,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "95e3c50b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 17605652900,
+            "tryCount": 6649,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 5147,
+            "callerIsResponsible": false,
+            "signature": "95e3c50b",
+            "sequenceId": "1af5b964",
+            "sequenceNumber": 190,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "95e3c50b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 17605652900,
+            "tryCount": 6649,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 5204,
+            "callerIsResponsible": false,
+            "signature": "95e3c50b",
+            "sequenceId": "1af5b964",
+            "sequenceNumber": 190,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "95e3c50b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 24076408100,
+            "tryCount": 7745,
+            "stepCount": 1,
+            "type": "precondition violation",
+            "text": "precondition violation",
+            "details": "Precondition violations should be avoided when passing inputs to other contracts. Make sure your contracts provide only valid inputs to both callees (e.g, via passed arguments) and callers (e.g., via return values).",
+            "address": "0xb9816fc57977d5a786e654c7cf76767be63b966e",
+            "codeHash": "0x9b0edef21c456d47da966009824c3e10a62f4c201fbaac9fb68db9d2fff6adde",
+            "pc": 1136,
+            "callerIsResponsible": true,
+            "signature": "23b872dd",
+            "sequenceId": "ce56ac37",
+            "sequenceNumber": 193,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "013efd8b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                },
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 6070,
+                    "signature": "013efd8b",
+                    "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+                    "callNumber": 4,
+                    "parentCallNumber": 1
+                }
+            ],
+            "weaknessId": "SWC-123"
+        },
+        {
+            "time": 24076408100,
+            "tryCount": 7745,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 5998,
+            "callerIsResponsible": false,
+            "signature": "013efd8b",
+            "sequenceId": "ce56ac37",
+            "sequenceNumber": 193,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "013efd8b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 24076408100,
+            "tryCount": 7745,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 6011,
+            "callerIsResponsible": false,
+            "signature": "013efd8b",
+            "sequenceId": "ce56ac37",
+            "sequenceNumber": 193,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "013efd8b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 24076408100,
+            "tryCount": 7745,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 6068,
+            "callerIsResponsible": false,
+            "signature": "013efd8b",
+            "sequenceId": "ce56ac37",
+            "sequenceNumber": 193,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "013efd8b",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 70826872500,
+            "tryCount": 16630,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 4294,
+            "callerIsResponsible": false,
+            "signature": "0b573638",
+            "sequenceId": "7e9ef476",
+            "sequenceNumber": 210,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "0b573638",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 70826872500,
+            "tryCount": 16630,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 4307,
+            "callerIsResponsible": false,
+            "signature": "0b573638",
+            "sequenceId": "7e9ef476",
+            "sequenceNumber": 210,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "0b573638",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 70826872500,
+            "tryCount": 16630,
+            "stepCount": 1,
+            "type": "storage read after call",
+            "text": "storage read after call",
+            "details": "Accessing the persistent storage of a contract should be avoided after calls to external contracts to prevent reentrancy issues. Make sure the callee is trusted or access the persistent storage before the call.",
+            "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 4359,
+            "callerIsResponsible": false,
+            "signature": "0b573638",
+            "sequenceId": "7e9ef476",
+            "sequenceNumber": 210,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "0b573638",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                }
+            ],
+            "weaknessId": "SWC-107"
+        },
+        {
+            "time": 199280297000,
+            "tryCount": 49787,
+            "stepCount": 1,
+            "type": "precondition violation",
+            "text": "precondition violation",
+            "details": "Precondition violations should be avoided when passing inputs to other contracts. Make sure your contracts provide only valid inputs to both callees (e.g, via passed arguments) and callers (e.g., via return values).",
+            "address": "0xb9816fc57977d5a786e654c7cf76767be63b966e",
+            "codeHash": "0x9b0edef21c456d47da966009824c3e10a62f4c201fbaac9fb68db9d2fff6adde",
+            "pc": 1136,
+            "callerIsResponsible": true,
+            "signature": "23b872dd",
+            "sequenceId": "b69f9ed4",
+            "sequenceNumber": 296,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "b1cb43bf",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                },
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 6982,
+                    "signature": "b1cb43bf",
+                    "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+                    "callNumber": 3,
+                    "parentCallNumber": 1
+                }
+            ],
+            "weaknessId": "SWC-123"
+        },
+        {
+            "time": 15815659731700,
+            "tryCount": 3536179,
+            "stepCount": 1,
+            "type": "precondition violation",
+            "text": "precondition violation",
+            "details": "Precondition violations should be avoided when passing inputs to other contracts. Make sure your contracts provide only valid inputs to both callees (e.g, via passed arguments) and callers (e.g., via return values).",
+            "address": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+            "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+            "pc": 10581,
+            "callerIsResponsible": true,
+            "signature": "59e94862",
+            "sequenceId": "7bdd4b0c",
+            "sequenceNumber": 353,
+            "stackTrace": [
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 36,
+                    "signature": "981a1327",
+                    "codeHash": "0x4c352bf867304f72acf639a483974156b899c8d1c030c2510fc4fc06c79f5a91",
+                    "callNumber": 1,
+                    "parentCallNumber": 0
+                },
+                {
+                    "address": "0x665b35028596b164a9a51b4b28ed375fc4e88945",
+                    "pc": 8033,
+                    "signature": "981a1327",
+                    "codeHash": "0xb9205fc3f30b0ad30c6f03a0f464f8fd435fbf28cdbb6071054d62fb506a4b96",
+                    "callNumber": 2,
+                    "parentCallNumber": 1
+                }
+            ],
+            "weaknessId": "SWC-123"
+        }
+    ],
+    "covered-paths": 355,
+    "covered-instructions": 5794,
+    "not-out-of-gas-covered-paths": 355,
+    "time-secs": 21607.1125976,
+    "energy-used": 4699018
+}

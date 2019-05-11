@@ -164,7 +164,7 @@ export class IUniswapExchange extends Contract {
       max_eth_sold: number | string | BigNumber,
       deadline: number | string | BigNumber,
       recipient: string,
-      token_addr: string,
+      exchange_addr: string,
       overrides?: TransactionOverrides
     ): Promise<ContractTransaction>;
 

@@ -261,7 +261,7 @@ interface IUniswapExchange {
    * @param max_eth_sold Maximum ETH purchased as intermediary.
    * @param deadline Time after which this transaction can no longer be executed.
    * @param recipient The address that receives output ETH.
-   * @param token_addr The address of the token being purchased.
+   * @param exchange_addr The address of the exchange for the token being purchased.
    * @return Amount of Tokens (token) sold.
    */
   function tokenToExchangeTransferOutput(
@@ -270,7 +270,7 @@ interface IUniswapExchange {
     uint256 max_eth_sold, 
     uint256 deadline, 
     address recipient, 
-    address token_addr) 
+    address exchange_addr) 
     external returns (uint256);
 
 
