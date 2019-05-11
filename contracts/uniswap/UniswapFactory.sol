@@ -23,15 +23,15 @@ contract UniswapFactory {
   |__________________________________*/
 
   function initializeFactory(address template) public {
-    assert(exchangeTemplate == address(0));
-    assert(template != address(0));
+    require(exchangeTemplate == address(0));
+    require(template != address(0));
     exchangeTemplate = template;
   }
   
   function createExchange(address token) public returns (address) {
-    assert(token != address(0));
-    assert(exchangeTemplate != address(0));
-    assert(token_to_exchange[token] == address(0));
+    require(token != address(0));
+    require(exchangeTemplate != address(0));
+    require(token_to_exchange[token] == address(0));
     UniswapExchange exchange = new UniswapExchange();
     exchange.setup(token);
     token_to_exchange[token] = address(exchange);
